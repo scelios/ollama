@@ -1,0 +1,7 @@
+FROM ollama/ollama:latest
+
+# Expose the default Ollama port
+EXPOSE 11434
+
+# Start Ollama server
+CMD ["/bin/ollama", "serve"]
